@@ -1,5 +1,6 @@
 const { users } = require('../infra/database')
 
+
 class RepositoriesInMemory {
 
     getUsers (){
@@ -10,8 +11,8 @@ class RepositoriesInMemory {
         const encontraUsuario = users.find((user) => user.e_mail === e_mail) || null;
 
         return encontraUsuario;
-        
     }
+
 }
 
 module.exports = { RepositoriesInMemory }
